@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Detenidos - Conteo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="fecha-actual">domingo, 19 de abril de 2026</h1>
+    </header>
+
+    <main class="dashboard">
+        <!-- Columna Izquierda: Pabellón 2 -->
+        <section class="column">
+            <div class="section-header main-header">PABELLON 2</div>
+            <div id="pabellon-2-container">
+                <!-- Las celdas se cargarán dinámicamente aquí -->
+            </div>
+            <div class="total-box">EL TOTAL EN EL PABELLON 2: <span id="total-p2">85</span></div>
+        </section>
+
+        <!-- Columna Derecha: Pabellón 3, 4 y Otros -->
+        <section class="column">
+            <div class="section-header main-header">PABELLON 3 - CONDUCTA (Grande)</div>
+            <div id="pabellon-3-table"></div>
+
+            <div class="section-header">PABELLON 4</div>
+            <div id="pabellon-4-table"></div>
+
+            <div class="section-header">OBSERVACIONES Y SANCIONES</div>
+            <div class="obs-box"></div>
+
+            <div class="footer-stats">
+                <p>MASCULINOS: 108</p>
+                <p>TOTAL DETENIDOS: 111</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
